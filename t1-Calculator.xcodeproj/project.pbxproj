@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6EC322022A7F6F1900E41F05 /* t1_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC322012A7F6F1900E41F05 /* t1_CalculatorApp.swift */; };
-		6EC322042A7F6F1900E41F05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC322032A7F6F1900E41F05 /* ContentView.swift */; };
 		6EC322062A7F6F1A00E41F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC322052A7F6F1A00E41F05 /* Assets.xcassets */; };
 		6EC322092A7F6F1A00E41F05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC322082A7F6F1A00E41F05 /* Preview Assets.xcassets */; };
+		6EC322122A7F6F6900E41F05 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC322112A7F6F6900E41F05 /* MainWindow.swift */; };
+		6EF475652A81749300833F8D /* t1-Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF475642A81749300833F8D /* t1-Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6EC321FE2A7F6F1900E41F05 /* t1-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "t1-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC322012A7F6F1900E41F05 /* t1_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = t1_CalculatorApp.swift; sourceTree = "<group>"; };
-		6EC322032A7F6F1900E41F05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6EC322052A7F6F1A00E41F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EC322082A7F6F1A00E41F05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6EC3220A2A7F6F1A00E41F05 /* t1_Calculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = t1_Calculator.entitlements; sourceTree = "<group>"; };
+		6EC322112A7F6F6900E41F05 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		6EF475642A81749300833F8D /* t1-Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "t1-Calculator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +54,12 @@
 		6EC322002A7F6F1900E41F05 /* t1-Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				6EC322012A7F6F1900E41F05 /* t1_CalculatorApp.swift */,
-				6EC322032A7F6F1900E41F05 /* ContentView.swift */,
-				6EC322052A7F6F1A00E41F05 /* Assets.xcassets */,
 				6EC3220A2A7F6F1A00E41F05 /* t1_Calculator.entitlements */,
+				6EC322012A7F6F1900E41F05 /* t1_CalculatorApp.swift */,
+				6EC322052A7F6F1A00E41F05 /* Assets.xcassets */,
+				6EC322132A7F6FEE00E41F05 /* Classes */,
 				6EC322072A7F6F1A00E41F05 /* Preview Content */,
+				6EC322102A7F6F4C00E41F05 /* Views */,
 			);
 			path = "t1-Calculator";
 			sourceTree = "<group>";
@@ -67,6 +70,22 @@
 				6EC322082A7F6F1A00E41F05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6EC322102A7F6F4C00E41F05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6EC322112A7F6F6900E41F05 /* MainWindow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6EC322132A7F6FEE00E41F05 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6EF475642A81749300833F8D /* t1-Calculator.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EC322042A7F6F1900E41F05 /* ContentView.swift in Sources */,
+				6EC322122A7F6F6900E41F05 /* MainWindow.swift in Sources */,
 				6EC322022A7F6F1900E41F05 /* t1_CalculatorApp.swift in Sources */,
+				6EF475652A81749300833F8D /* t1-Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
